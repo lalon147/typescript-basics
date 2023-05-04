@@ -22,3 +22,25 @@ const calculate=(number1:number,number2:number,operation:OperationType)=>{
 }
 
 console.log(calculate(10,20,(x,y)=>x-y))
+ 
+
+//Union and intersection types
+
+type NoobDeveloper={
+    name:string
+}
+type JuniorDeveloper= NoobDeveloper & { 
+    expertise:string,
+    experience:number
+}
+// type JuniorDeveloper={
+//     name:string,
+//     expertise:string,
+//     experience:number
+// }
+
+const newDeveloper:NoobDeveloper|JuniorDeveloper={
+    name:"LALON ",
+    experience:5,
+    expertise:"REACT"
+}

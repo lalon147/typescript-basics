@@ -29,9 +29,14 @@ console.log(calculate(10,20,(x,y)=>x-y))
 type NoobDeveloper={
     name:string
 }
+//ENUM type
+enum Level{
+    junior=1,mid=2,senior=3
+}
 type JuniorDeveloper= NoobDeveloper & { 
     expertise:string,
-    experience:number
+    experience:number,
+    level:Level
 }
 // type JuniorDeveloper={
 //     name:string,
@@ -42,5 +47,11 @@ type JuniorDeveloper= NoobDeveloper & {
 const newDeveloper:NoobDeveloper|JuniorDeveloper={
     name:"LALON ",
     experience:5,
-    expertise:"REACT"
+    expertise:"REACT",
+    level:Level.mid
 }
+console.log(newDeveloper.level)
+ 
+
+
+

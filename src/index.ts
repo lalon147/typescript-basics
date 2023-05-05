@@ -51,7 +51,22 @@ const newDeveloper:NoobDeveloper|JuniorDeveloper={
     level:Level.mid
 }
 console.log(newDeveloper.level)
+//interface
+interface IUser={
+    name:string;
+    age:number;
+}
+const userInterface:IUser={
+    name:"lalon",
+    age:90
+}
+
+//extended user
+interface extendedUser extends IUser{
+role:"string"
+}
  
+//we can extend user and type alias a 
 
 
 

@@ -68,5 +68,14 @@ role:"string"
  
 //we can extend user and type alias a 
 
+type addTwoNumberType=(num1:number,num2:number)=>number
+const addTwoNumber:addTwoNumberType=(num1,num2)=>num2+num1
+
+//array interface
+interface IRollnumbers {
+    [index:number]:number //array of numbers
+    //this is called index signature
+}
+
 
 
